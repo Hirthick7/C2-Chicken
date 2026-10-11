@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="C2 Chicken - Local fried chicken takeaway in Cuddalore, Tamil Nadu. Crisp, golden fried chicken, burgers, breaded prawns, and refreshing mojitos. Call 087787 09733.">
+  <title>C2 Chicken | Fried Chicken Takeaway | Cuddalore, Tamil Nadu</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Proposal Banner -->
+  <aside class="sample-banner" id="sampleBanner" aria-label="Proposal Notice">
+    <div class="sample-banner-container">
+      <div class="sample-banner-text">
+        <span class="sample-badge">Concept Preview</span>
+        <span>Modern website proposal for <strong>C2 Chicken</strong> (Cuddalore). Ready for owner review &amp; live deployment.</span>
+      </div>
+      <button type="button" class="sample-banner-close" id="closeBannerBtn" aria-label="Dismiss banner">&times;</button>
+    </div>
+  </aside>
+
+  <!-- Sticky Header / Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <a href="#home" class="brand-logo" aria-label="C2 Chicken Home">
+        <span class="brand-badge">C2</span>
+        <span class="brand-text">CHICKEN</span>
+        <span class="brand-location">CUDDALORE</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="header-actions">
+        <a href="tel:+918778709733" class="btn btn-sm btn-outline header-call-btn" aria-label="Call C2 Chicken at 087787 09733">
+          <svg class="icon-phone" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>087787 09733</span>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-expanded="false" aria-controls="mobileDrawer" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <a href="#home" class="brand-logo" aria-label="C2 Chicken Home">
+          <span class="brand-badge">C2</span>
+          <span class="brand-text">CHICKEN</span>
+        </a>
+        <button type="button" class="drawer-close" id="drawerCloseBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <nav class="drawer-nav" aria-label="Mobile Navigation">
+        <ul class="drawer-links">
+          <li><a href="#home" class="drawer-link">Home</a></li>
+          <li><a href="#menu" class="drawer-link">Menu Categories</a></li>
+          <li><a href="#about" class="drawer-link">About C2 Chicken</a></li>
+          <li><a href="#reviews" class="drawer-link">Customer Reviews</a></li>
+          <li><a href="#contact" class="drawer-link">Location &amp; Contact</a></li>
+        </ul>
+      </nav>
+      <div class="drawer-footer">
+        <p class="drawer-address-title">C2 Chicken Takeaway</p>
+        <p class="drawer-address">19F, Nellikuppam Main Road, Chavadi, Kondur, Cuddalore</p>
+        <a href="tel:+918778709733" class="btn btn-primary btn-block">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Call to Order: 087787 09733
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="home" aria-labelledby="heroHeadline">
+      <div class="hero-background" aria-hidden="true">
+        <div class="hero-glow"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-tag">
+            <span class="status-dot"></span>
+            <span>Local Fried Chicken Takeaway • Cuddalore</span>
+          </div>
+          <h1 class="hero-headline" id="heroHeadline">
+            BITE INTO <br>
+            <span class="text-primary-red">THE CRUNCH.</span>
+          </h1>
+          <p class="hero-subtext">
+            Craving hot, crispy fried chicken in Cuddalore? Pick up golden-brown drumsticks, flavorful burgers, crispy seafood, and ice-cold mojitos made fresh for your takeaway cravings.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#menu" class="btn btn-primary btn-lg">
+              <span>Explore Menu</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=19F,+Nellikuppam+Main+Road,+Vinayaga+Nagar,+Chavadi,+Kondur,+Cuddalore,+Tamil+Nadu+607006" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              <span>Get Directions</span>
+            </a>
+          </div>
+
+          <!-- Verified Listing Highlights -->
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <div class="highlight-rating">
+                <span class="star-icon">★</span>
+                <span class="rating-number">4.6</span>
+                <span class="rating-max">/5</span>
+              </div>
+              <span class="highlight-label">37 Verified Google Reviews</span>
+            </div>
+            <div class="highlight-divider" aria-hidden="true"></div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🥡</span>
+              <span class="highlight-label">Fresh Takeaway &amp; Pick-up</span>
+            </div>
+            <div class="highlight-divider" aria-hidden="true"></div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📍</span>
+              <span class="highlight-label">Kondur / Chavadi, Cuddalore</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media reveal-on-scroll">
+          <div class="hero-image-wrapper">
+            <img src="images/hero-chicken.jpg" alt="Golden crispy fried chicken drumsticks with seasoned crunchy coating" class="hero-image" width="800" height="450" loading="eager">
+            <div class="hero-image-badge">
+              <span class="badge-accent">Hot &amp; Crunchy</span>
+              <span class="badge-title">Fried Chicken Takeaway</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Menu Section -->
+    <section class="menu-section section-padding" id="menu" aria-labelledby="menuHeading">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">Available Categories</span>
+          <h2 class="section-title" id="menuHeading">Popular Takeaway Menu</h2>
+          <p class="section-desc">
+            Explore our featured categories based on local shop listings. Every batch is fried hot and packed crisp for your takeaway pickup.
+          </p>
+        </div>
+
+        <!-- Menu Filter Tabs -->
+        <div class="menu-filter-nav reveal-on-scroll" role="tablist" aria-label="Menu Category Filter">
+          <button type="button" class="filter-tab active" role="tab" aria-selected="true" data-filter="all">All Items</button>
+          <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="chicken">Fried Chicken</button>
+          <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="burgers">Chicken Burgers</button>
+          <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="prawns">Breaded Prawns</button>
+          <button type="button" class="filter-tab" role="tab" aria-selected="false" data-filter="beverages">Mojitos &amp; Drinks</button>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+
+          <!-- Card 1: Fried Chicken -->
+          <article class="food-card reveal-on-scroll" data-category="chicken">
+            <div class="card-image-box">
+              <img src="images/fried-chicken.jpg" alt="Freshly fried crispy chicken pieces and drumsticks on a platter" class="food-img" width="600" height="450" loading="lazy">
+              <span class="category-tag">Fried Chicken</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="card-title">Crispy Fried Chicken</h3>
+                <span class="price-notice">Ask us for today's price</span>
+              </div>
+              <p class="card-desc">
+                Golden-brown, extra-crispy fried chicken drumsticks and pieces, seasoned with savory spices and served hot for takeaway.
+              </p>
+              <div class="card-footer-row">
+                <span class="food-tag">Takeaway Favorite</span>
+                <a href="tel:+918778709733" class="card-action-btn" aria-label="Call 087787 09733 to inquire about Crispy Fried Chicken">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>Inquire / Call</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Chicken Burgers -->
+          <article class="food-card reveal-on-scroll" data-category="burgers">
+            <div class="card-image-box">
+              <img src="images/chicken-burger.jpg" alt="Crispy chicken fillet burger with melted cheese, lettuce, and brioche bun" class="food-img" width="600" height="450" loading="lazy">
+              <span class="category-tag">Chicken Burgers</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="card-title">Crispy Chicken Burger</h3>
+                <span class="price-notice">Ask us for today's price</span>
+              </div>
+              <p class="card-desc">
+                Crunchy deep-fried chicken patty layered with crisp green lettuce, melted cheese, and signature sauce in a soft toasted bun.
+              </p>
+              <div class="card-footer-row">
+                <span class="food-tag">Classic Pick</span>
+                <a href="tel:+918778709733" class="card-action-btn" aria-label="Call 087787 09733 to inquire about Crispy Chicken Burger">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>Inquire / Call</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Breaded Prawns -->
+          <article class="food-card reveal-on-scroll" data-category="prawns">
+            <div class="card-image-box">
+              <img src="images/breaded-prawns.jpg" alt="Golden crumb breaded crispy prawns served with dipping sauce and lemon" class="food-img" width="600" height="450" loading="lazy">
+              <span class="category-tag">Breaded Prawns</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="card-title">Golden Breaded Prawns</h3>
+                <span class="price-notice">Ask us for today's price</span>
+              </div>
+              <p class="card-desc">
+                Crumb-coated, deep-fried crispy butterfly prawns served hot with tangy dipping sauce and fresh lemon wedge.
+              </p>
+              <div class="card-footer-row">
+                <span class="food-tag">Seafood Delight</span>
+                <a href="tel:+918778709733" class="card-action-btn" aria-label="Call 087787 09733 to inquire about Golden Breaded Prawns">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>Inquire / Call</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Mojitos and Beverages -->
+          <article class="food-card reveal-on-scroll" data-category="beverages">
+            <div class="card-image-box">
+              <img src="images/mojitos-beverages.jpg" alt="Chilled mint lime mojito and berry cooler with ice in tall glasses" class="food-img" width="600" height="450" loading="lazy">
+              <span class="category-tag">Mojitos &amp; Beverages</span>
+            </div>
+            <div class="card-content">
+              <div class="card-header-row">
+                <h3 class="card-title">Mojitos &amp; Coolers</h3>
+                <span class="price-notice">Ask us for today's price</span>
+              </div>
+              <p class="card-desc">
+                Chilled mint lime virgin mojitos and vibrant fruit coolers prepared with crushed ice to perfectly balance your fried chicken feast.
+              </p>
+              <div class="card-footer-row">
+                <span class="food-tag">Refreshing Sips</span>
+                <a href="tel:+918778709733" class="card-action-btn" aria-label="Call 087787 09733 to inquire about Mojitos and Beverages">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>Inquire / Call</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Menu Disclaimer Card -->
+        <div class="menu-notice-card reveal-on-scroll">
+          <div class="notice-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+          <div class="notice-text">
+            <strong>Listing Reference Note:</strong>
+            These categories reflect publicly available menu items for C2 Chicken. Portions, daily specials, and live pricing are updated at the takeaway counter. Please call <a href="tel:+918778709733" class="notice-link">087787 09733</a> for today's price and availability.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-padding" id="about" aria-labelledby="aboutHeading">
+      <div class="container about-container">
+        <div class="about-media reveal-on-scroll">
+          <div class="about-image-card">
+            <img src="images/about-takeaway.jpg" alt="Golden fried chicken drumsticks on wire rack right out of the fryer" class="about-img" width="600" height="450" loading="lazy">
+            <div class="about-badge">
+              <span class="about-badge-title">Cuddalore Takeaway</span>
+              <span class="about-badge-sub">Hot &bull; Crispy &bull; Quick Pickup</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal-on-scroll">
+          <span class="section-eyebrow">About C2 Chicken</span>
+          <h2 class="section-title" id="aboutHeading">Your Local Fried Chicken Takeaway in Cuddalore</h2>
+          <p class="about-lead">
+            Located conveniently on Nellikuppam Main Road in Kondur / Chavadi, C2 Chicken is a local takeaway dedicated to serving piping-hot fried chicken and quick bites.
+          </p>
+          <p class="about-body">
+            Whether you are on your way home or planning an evening meal with friends and family, our kitchen focuses on serving crunchy chicken, delicious burgers, and chilled drinks packaged fresh for convenient takeaway pickup.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">🍗</div>
+              <div class="pillar-info">
+                <h4 class="pillar-title">Crispy Fried Chicken</h4>
+                <p class="pillar-desc">Cooked hot and delivered crisp in takeaway-friendly packaging.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">📍</div>
+              <div class="pillar-info">
+                <h4 class="pillar-title">Accessible Location</h4>
+                <p class="pillar-desc">Located right on Nellikuppam Main Road in Vinayaga Nagar, Chavadi.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">📞</div>
+              <div class="pillar-info">
+                <h4 class="pillar-title">Easy Phone Ordering</h4>
+                <p class="pillar-desc">Call ahead to check availability and have your order ready for pickup.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cta">
+            <a href="tel:+918778709733" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Call For Pickup: 087787 09733</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section section-padding" id="reviews" aria-labelledby="reviewsHeading">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">Verified Google Rating</span>
+          <h2 class="section-title" id="reviewsHeading">What Cuddalore Customers Say</h2>
+          <p class="section-desc">
+            Verified ratings and customer feedback from the official Google Maps business listing.
+          </p>
+        </div>
+
+        <!-- Google Score Card -->
+        <div class="google-rating-card reveal-on-scroll">
+          <div class="rating-stat-box">
+            <div class="stat-score-row">
+              <span class="stat-large">4.6</span>
+              <div class="stat-stars-wrapper">
+                <div class="stars-gold" aria-hidden="true">★★★★★</div>
+                <span class="stat-count">Based on 37 Google Reviews</span>
+              </div>
+            </div>
+            <div class="verified-source-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Verified Google Business Listing Reference</span>
+            </div>
+          </div>
+
+          <div class="google-link-action">
+            <a href="https://www.google.com/maps/search/?api=1&query=C2+Chicken+19F+Nellikuppam+Main+Road+Chavadi+Kondur+Cuddalore" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="View C2 Chicken on Google Maps">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>View On Google Maps</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Verified Reviews Excerpts Grid -->
+        <div class="reviews-grid">
+          <div class="review-card reveal-on-scroll">
+            <div class="review-card-top">
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <span class="review-source">Google Review</span>
+            </div>
+            <blockquote class="review-quote">
+              &ldquo;Great taste and very crispy chicken. One of the nice spots for fried chicken in Cuddalore.&rdquo;
+            </blockquote>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar" aria-hidden="true">R</div>
+              <div>
+                <p class="reviewer-name">Local Guide Feedback</p>
+                <span class="review-date">Verified Customer Review</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal-on-scroll">
+            <div class="review-card-top">
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <span class="review-source">Google Review</span>
+            </div>
+            <blockquote class="review-quote">
+              &ldquo;Crunchy chicken pieces, tasty burgers and quick service for takeaway. Good quality food.&rdquo;
+            </blockquote>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar" aria-hidden="true">C</div>
+              <div>
+                <p class="reviewer-name">Cuddalore Visitor</p>
+                <span class="review-date">Verified Customer Review</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card reveal-on-scroll">
+            <div class="review-card-top">
+              <div class="review-stars" aria-label="4 out of 5 stars">★★★★☆</div>
+              <span class="review-source">Google Review</span>
+            </div>
+            <blockquote class="review-quote">
+              &ldquo;Good fried chicken takeaway with good flavor and reasonable pricing on Nellikuppam Main Road.&rdquo;
+            </blockquote>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar" aria-hidden="true">K</div>
+              <div>
+                <p class="reviewer-name">Local Resident</p>
+                <span class="review-date">Verified Customer Review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-footer-note text-center reveal-on-scroll">
+          <p class="text-muted">
+            Customer feedback excerpts are attributed to the publicly verified Google Maps business listing with 37 reviews and an overall 4.6 rating.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="contact-section section-padding" id="contact" aria-labelledby="contactHeading">
+      <div class="container">
+        <div class="section-header text-center reveal-on-scroll">
+          <span class="section-eyebrow">Find &amp; Call Us</span>
+          <h2 class="section-title" id="contactHeading">Location &amp; Takeaway Info</h2>
+          <p class="section-desc">
+            Visit our shop for quick takeaway pickup or tap below to call us directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Information Column -->
+          <div class="contact-info-panel reveal-on-scroll">
+            
+            <!-- Address Card -->
+            <div class="info-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-title">Shop Address</h3>
+                <p class="info-text">
+                  19F, Nellikuppam Main Road, Vinayaga Nagar, Chavadi, Kondur,<br>
+                  Cuddalore, Tamil Nadu 607006
+                </p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=19F,+Nellikuppam+Main+Road,+Vinayaga+Nagar,+Chavadi,+Kondur,+Cuddalore,+Tamil+Nadu+607006" target="_blank" rel="noopener noreferrer" class="link-action">
+                  <span>Open in Google Maps Directions</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="info-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-title">Phone &amp; Takeaway Orders</h3>
+                <p class="info-text">
+                  Call us directly to place your order or ask about current items:
+                </p>
+                <div class="phone-action-row">
+                  <a href="tel:+918778709733" class="phone-link" aria-label="Call C2 Chicken at 087787 09733">
+                    087787 09733
+                  </a>
+                  <span class="phone-format">(+91 87787 09733)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Operating Hours Notice Card -->
+            <div class="info-card hours-card">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-title">Operating Hours</h3>
+                <p class="info-text">
+                  <strong>Listing reference:</strong> Closes at 10:00 PM.
+                </p>
+                <p class="hours-alert-note">
+                  <em>Note for customers:</em> Weekly operating hours and opening times should be confirmed directly with the shop owner before visiting.
+                </p>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="contact-btn-group">
+              <a href="tel:+918778709733" class="btn btn-primary btn-block">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Click to Call (087787 09733)</span>
+              </a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=19F,+Nellikuppam+Main+Road,+Vinayaga+Nagar,+Chavadi,+Kondur,+Cuddalore,+Tamil+Nadu+607006" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-block">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                <span>Get Driving / Walking Directions</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Map Column -->
+          <div class="contact-map-panel reveal-on-scroll">
+            <div class="map-card-wrapper">
+              <div class="map-header">
+                <div class="map-pin-badge">
+                  <span class="pin-dot"></span>
+                  <span>C2 Chicken &bull; Cuddalore</span>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=19F,+Nellikuppam+Main+Road,+Vinayaga+Nagar,+Chavadi,+Kondur,+Cuddalore,+Tamil+Nadu+607006" target="_blank" rel="noopener noreferrer" class="map-directions-btn" aria-label="Open Google Maps Directions">
+                  <span>Navigate</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Embedded Map Frame -->
+              <div class="map-embed-container">
+                <iframe 
+                  title="Google Maps Location for C2 Chicken, Nellikuppam Main Road, Kondur, Cuddalore" 
+                  src="https://maps.google.com/maps?q=19F%2C+Nellikuppam+Main+Road%2C+Vinayaga+Nagar%2C+Chavadi%2C+Kondur%2C+Cuddalore%2C+Tamil+Nadu+607006&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade" 
+                  class="map-iframe">
+                </iframe>
+              </div>
+
+              <div class="map-footer-caption">
+                <p>📍 19F, Nellikuppam Main Road, Vinayaga Nagar, Chavadi, Kondur, Cuddalore - 607006</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand-col">
+        <a href="#home" class="brand-logo footer-logo" aria-label="C2 Chicken Home">
+          <span class="brand-badge">C2</span>
+          <span class="brand-text">CHICKEN</span>
+        </a>
+        <p class="footer-desc">
+          Fried chicken takeaway business in Cuddalore, Tamil Nadu. Serving hot crispy chicken, delicious burgers, breaded prawns, and chilled mojitos.
+        </p>
+        <div class="footer-contact-items">
+          <p class="footer-info-line">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:+918778709733" class="footer-link">087787 09733 (+91 87787 09733)</a>
+          </p>
+          <p class="footer-info-line">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>19F, Nellikuppam Main Road, Chavadi, Kondur, Cuddalore, TN 607006</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Popular Menu</a></li>
+          <li><a href="#about">About C2 Chicken</a></li>
+          <li><a href="#reviews">Customer Reviews</a></li>
+          <li><a href="#contact">Location &amp; Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-meta-col">
+        <h4 class="footer-col-title">Takeaway Hours</h4>
+        <p class="footer-hours-text">Closes at 10:00 PM</p>
+        <p class="footer-hours-sub">Timings may vary; please confirm weekly hours directly with the shop.</p>
+        <div class="footer-cta-box">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=19F,+Nellikuppam+Main+Road,+Vinayaga+Nagar,+Chavadi,+Kondur,+Cuddalore,+Tamil+Nadu+607006" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+            Google Maps Directions
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p class="copyright-line">&copy; 2026 C2 Chicken. All rights reserved.</p>
+        <p class="sample-notice-line">Restaurant website sample &amp; proposal concept &bull; Cuddalore, Tamil Nadu</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick-Call CTA for Mobile -->
+  <aside class="mobile-floating-bar" aria-label="Mobile Quick Action Bar">
+    <a href="tel:+918778709733" class="float-btn float-call" aria-label="Call C2 Chicken">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+      <span>Call: 087787 09733</span>
+    </a>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=19F,+Nellikuppam+Main+Road,+Vinayaga+Nagar,+Chavadi,+Kondur,+Cuddalore,+Tamil+Nadu+607006" target="_blank" rel="noopener noreferrer" class="float-btn float-directions" aria-label="Get Directions to C2 Chicken">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+      </svg>
+      <span>Directions</span>
+    </a>
+  </aside>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
