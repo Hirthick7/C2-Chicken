@@ -11,7 +11,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/c2-logo.png">
+  <link rel="apple-touch-icon" href="images/c2-logo.png">
+
+  <!-- Core / Desktop Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Dedicated Mobile Stylesheet (Applied when viewport <= 768px) -->
+  <link rel="stylesheet" href="mobile.css" media="(max-width: 768px)">
 </head>
 <body>
 
@@ -30,9 +38,11 @@
   <header class="site-header" id="siteHeader">
     <div class="header-container">
       <a href="#home" class="brand-logo" aria-label="C2 Chicken Home">
-        <span class="brand-badge">C2</span>
-        <span class="brand-text">CHICKEN</span>
-        <span class="brand-location">CUDDALORE</span>
+        <img src="images/c2-logo.png" alt="C2 Chicken Logo" class="brand-logo-img" width="48" height="48">
+        <div class="brand-name-group">
+          <span class="brand-text">C2 CHICKEN</span>
+          <span class="brand-subtext">IT'S SO CRUNCHY! &bull; CUDDALORE</span>
+        </div>
       </a>
 
       <!-- Desktop Navigation -->
@@ -71,8 +81,11 @@
     <div class="drawer-panel">
       <div class="drawer-header">
         <a href="#home" class="brand-logo" aria-label="C2 Chicken Home">
-          <span class="brand-badge">C2</span>
-          <span class="brand-text">CHICKEN</span>
+          <img src="images/c2-logo.png" alt="C2 Chicken Logo" class="brand-logo-img" width="46" height="46">
+          <div class="brand-name-group">
+            <span class="brand-text">C2 CHICKEN</span>
+            <span class="brand-subtext">IT'S SO CRUNCHY!</span>
+          </div>
         </a>
         <button type="button" class="drawer-close" id="drawerCloseBtn" aria-label="Close menu">&times;</button>
       </div>
@@ -618,8 +631,11 @@
     <div class="container footer-container">
       <div class="footer-brand-col">
         <a href="#home" class="brand-logo footer-logo" aria-label="C2 Chicken Home">
-          <span class="brand-badge">C2</span>
-          <span class="brand-text">CHICKEN</span>
+          <img src="images/c2-logo.png" alt="C2 Chicken Logo" class="brand-logo-img footer-logo-img" width="52" height="52">
+          <div class="brand-name-group">
+            <span class="brand-text">C2 CHICKEN</span>
+            <span class="brand-subtext">IT'S SO CRUNCHY! &bull; CUDDALORE</span>
+          </div>
         </a>
         <p class="footer-desc">
           Fried chicken takeaway business in Cuddalore, Tamil Nadu. Serving hot crispy chicken, delicious burgers, breaded prawns, and chilled mojitos.

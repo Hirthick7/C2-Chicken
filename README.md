@@ -56,6 +56,7 @@ This website was built to complement the authentic brand identity of **C2 Chicke
 ```text
 C2-Chicken/
 ├── images/
+│   ├── c2-logo.png             # Official C2 Chicken brand emblem logo
 │   ├── hero-chicken.jpg        # Hero banner photography
 │   ├── fried-chicken.jpg       # Fried chicken category card
 │   ├── chicken-burger.jpg      # Chicken burger category card
@@ -63,7 +64,8 @@ C2-Chicken/
 │   ├── mojitos-beverages.jpg   # Beverages & coolers card
 │   └── about-takeaway.jpg      # Takeaway kitchen feature image
 ├── index.html                  # Semantic HTML5 markup
-├── style.css                   # Custom CSS3 styling & design system
+├── style.css                   # Core & desktop CSS design system
+├── mobile.css                  # Dedicated mobile stylesheet (media <= 768px)
 ├── script.js                   # Mobile drawer, scroll reveal, menu filter
 └── README.md                   # Documentation
 ```

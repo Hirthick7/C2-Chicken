@@ -348,47 +348,59 @@ h1, h2, h3, h4, h5, h6 {
   gap: 20px;
 }
 
-/* Brand Logo (Text-based, authentic to C2 Chicken) */
+/* Brand Logo (Authentic C2 Chicken Badge & Typography) */
 .brand-logo {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   text-decoration: none;
+  transition: transform var(--transition-fast);
 }
 
-.brand-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  font-family: var(--font-heading);
-  font-weight: 900;
-  font-size: 1.125rem;
-  letter-spacing: -0.03em;
-  padding: 4px 10px;
-  border-radius: var(--radius-sm);
-  box-shadow: 0 2px 10px rgba(215, 25, 32, 0.45);
+.brand-logo:hover {
+  transform: translateY(-1px);
+}
+
+.brand-logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px rgba(215, 25, 32, 0.45));
+  transition: transform var(--transition-normal);
+  flex-shrink: 0;
+}
+
+.brand-logo:hover .brand-logo-img {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.brand-name-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
 }
 
 .brand-text {
   font-family: var(--font-heading);
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.25rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   color: var(--color-white);
 }
 
-.brand-location {
-  font-size: 0.625rem;
+.brand-subtext {
   font-family: var(--font-heading);
+  font-size: 0.625rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-text-secondary);
-  border-left: 1px solid var(--color-dark-border-strong);
-  padding-left: 8px;
-  margin-left: 2px;
+  color: var(--color-primary);
+  margin-top: 3px;
+}
+
+.footer-logo-img {
+  width: 52px;
+  height: 52px;
 }
 
 /* Desktop Navigation */
